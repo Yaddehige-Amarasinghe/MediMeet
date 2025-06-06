@@ -12,7 +12,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className}`}>{children}</body>
+        className={`${inter.className}`}>
+
+          <main className="min-h-screen">{children}</main>
+          
+          <footer>
+            <div>
+              <p>Made in MediMeet</p>
+            </div>
+          </footer>
+          
+          </body>
     </html>
   );
 }
